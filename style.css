@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color-lila: rgb(72,60,140);
+    --accent-color-orange: darkorange;
+    --background-category: deepskyblue;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-weight: 800;
+}
+
+.article-container {
+    margin: 48px 96px;
+
+    display: flex;
+}
+
+article + article {
+    margin-left: 2rem;
+}
+
+.preview-card {
+    font-size: 1rem;
+    border: 0.125rem, solid black;
+    border-radius: 0.75rem;
+
+    max-width: 400px;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shadow-lila {
+    box-shadow: 0.5rem 0.5rem 0 var(--accent-color-lila);
+}
+
+.shadow-orange {
+    box-shadow: 0.5rem 0.5rem 0 var(--accent-color-orange);
+}
+
+.article-pc {
+    width: 100%;
+    aspect-ratio: 2.5 / 1;
+    border-radius: 0.125rem;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.sub-pc {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 2.5rem;
+
+    color: rgb(179, 180, 179);
+    font-weight: 500;
+}
+
+.avatar-name-group {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    height: 1.5rem;
+    border-radius: 10rem;
+}
+
+.name {
+    padding-left: 0.5rem;
+}
+
+.orange {
+    border: 0.2rem solid var(--accent-color-orange);
+}
+
+.lila {
+    border: 0.2rem solid var(--accent-color-lila);
+}
+
+.category-container{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.category {
+    background-color: var(--background-category);
+    padding: 0.25rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 700;
+}
+
+.card-text {
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Zeilenlimit einstellen */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-container {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.read-btn {
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+}
+
+.read {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.bg-lila {
+    background-color: var(--accent-color-lila);
+}
+
+.bg-orange {
+    background-color: var(--accent-color-orange);
+}
